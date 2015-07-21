@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/ivAlbum"/>
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <TextView android:id="@+id/tvId"/>
+            <TextView android:id="@+id/tvName"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/tvAlbum"/>
+            <TextView android:id="@+id/tvSinger"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
